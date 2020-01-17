@@ -177,3 +177,48 @@ worldwide_vector <- rowSums(star_wars_matrix)
 all_wars_matrix <- cbind(star_wars_matrix, worldwide_vector)
 
 all_wars_matrix
+
+
+# all_wars_matrix is available in your workspace
+
+# Total revenue for US and non-US
+total_revenue_vector <- colSums(all_wars_matrix)
+  
+# Print out total_revenue_vector
+total_revenue_vector
+
+# all_wars_matrix is available in your workspace
+
+# Select the non-US revenue for all movies
+non_us_all <- all_wars_matrix[,2]
+  
+# Average non-US revenue
+mean(non_us_all)
+  
+# Select the non-US revenue for first two movies
+non_us_some <- all_wars_matrix[1:2,2]
+
+  
+# Average non-US revenue for first two movies
+mean(non_us_some)
+
+# all_wars_matrix is available in your workspace
+
+# Estimate the visitors
+visitors <- all_wars_matrix/5
+all_wars_matrix
+# Print the estimate to the console
+visitors
+
+# all_wars_matrix and ticket_prices_matrix are available in your workspace
+
+# Estimated number of visitors
+visitors <- all_wars_matrix/ticket_prices_matrix
+
+# US visitors
+us_visitors <- visitors[,1]
+
+# Average number of US visitors
+mean(us_visitors)
+
+#Chapter 3 ends up here
