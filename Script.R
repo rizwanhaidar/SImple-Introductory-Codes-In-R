@@ -310,3 +310,6 @@ da5 <- factor_speed_vector[5]
 # Is data analyst 2 faster than data analyst 5?
 da2>da5 ; da2
 
+# Call head() on mtcars
+head(mtcars)
+
